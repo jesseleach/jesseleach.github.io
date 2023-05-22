@@ -6,6 +6,7 @@ function App() {
     <div className="App">
        
       <h1>Portfolio Project</h1>
+      <h2>changes</h2>
     </div>
   );
 }
