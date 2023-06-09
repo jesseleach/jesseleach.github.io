@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />
         </Routes>
-        <NavLink to="projects">See My Projects and more changes!!</NavLink>
+        <NavLink to="projects">See My Projects and more changes!! Last one!</NavLink>
       </div>
     </BrowserRouter>
   );
