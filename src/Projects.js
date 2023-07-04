@@ -8,6 +8,10 @@ const ProjectsConfig = {
     src: "WeatherScreenShot.png",
     alt: "Weather project image",
   },
+  guarddogfacts: {
+    src: "guardDogsPic.png",
+    alt: "Guard Dog Image",
+  },
 };
 export function Projects() {
   const [activeProject, setActiveProject] = useState();
@@ -44,12 +48,18 @@ export function Projects() {
                 Weather
               </NavLink>
             </div>
+
+            <div
+              onMouseOver={handleMouseOver("guarddogfacts")}
+              onMouseOut={handleMouseOut}
+            >
             <NavLink
               to="https://jesseleach.github.io/guard-dog-facts"
               className="return"
             >
               Guard Dog Facts
             </NavLink>
+            </div>
             <NavLink
               to="https://jesseleach.github.io/newPictureSite"
               className="return"
