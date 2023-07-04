@@ -58,12 +58,12 @@ export function Projects() {
 
           {isHovering && (
             <div>
-              <h2>Only visible when hovering div</h2>
+              <div className="box"></div>
             </div>
           )}
         </div>
 
-        <div className="box"></div>
+        
       </div>
     </div>
   );
