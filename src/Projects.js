@@ -58,7 +58,8 @@ export function Projects() {
 
           {isHovering && (
             <div>
-              <div className="box"></div>
+              
+              <img src="WeatherScreenShot.png" alt="weatherpicture" className="weather"></img>
             </div>
           )}
         </div>
