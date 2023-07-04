@@ -3,15 +3,21 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import { Home } from "./Home";
 
+const ProjectsConfig = {
+  weather: {
+    src: "WeatherScreenShot.png",
+    alt: "Weather project image",
+  },
+};
 export function Projects() {
-  const [isHovering, setIsHovering] = useState(false);
+  const [activeProject, setActiveProject] = useState();
 
-  const handleMouseOver = () => {
-    setIsHovering(true);
+  const handleMouseOver = (project) => () => {
+    setActiveProject(project);
   };
 
   const handleMouseOut = () => {
-    setIsHovering(false);
+    setActiveProject(null);
   };
 
   return (
@@ -25,46 +31,49 @@ export function Projects() {
           </NavLink>
 
           <div className="work">
-              <h1 className="workitem">Work</h1>
+            <h1 className="workitem">Work</h1>
 
-          <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-           
+            <div
+              onMouseOver={handleMouseOver("weather")}
+              onMouseOut={handleMouseOut}
+            >
               <NavLink
                 to="https://jesseleach.github.io/weather"
                 className="return"
               >
                 Weather
               </NavLink>
-              <NavLink
-                to="https://jesseleach.github.io/guard-dog-facts"
-                className="return"
-              >
-                Guard Dog Facts
-              </NavLink>
-              <NavLink
-                to="https://jesseleach.github.io/newPictureSite"
-                className="return"
-              >
-                Picture Portfolio
-              </NavLink>
-              <NavLink
-                to="https://jesseleach.github.io/playground"
-                className="return"
-              >
-                Reddit Project
-              </NavLink>
             </div>
+            <NavLink
+              to="https://jesseleach.github.io/guard-dog-facts"
+              className="return"
+            >
+              Guard Dog Facts
+            </NavLink>
+            <NavLink
+              to="https://jesseleach.github.io/newPictureSite"
+              className="return"
+            >
+              Picture Portfolio
+            </NavLink>
+            <NavLink
+              to="https://jesseleach.github.io/playground"
+              className="return"
+            >
+              Reddit Project
+            </NavLink>
           </div>
 
-          {isHovering && (
+          {activeProject && (
             <div>
-              
-              <img src="WeatherScreenShot.png" alt="weatherpicture" className="weather"></img>
+              <img
+                src={ProjectsConfig[activeProject].src}
+                alt={ProjectsConfig[activeProject].alt}
+                className="project-image"
+              ></img>
             </div>
           )}
         </div>
-
-        
       </div>
     </div>
   );
