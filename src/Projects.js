@@ -12,6 +12,10 @@ const ProjectsConfig = {
     src: "guardDogsPic.png",
     alt: "Guard Dog Image",
   },
+  newPictureSite: {
+    src: "PictureSite.png",
+    alt: "Picture Site",
+  },
 };
 export function Projects() {
   const [activeProject, setActiveProject] = useState();
@@ -60,12 +64,18 @@ export function Projects() {
               Guard Dog Facts
             </NavLink>
             </div>
+
+            <div
+              onMouseOver={handleMouseOver("newPictureSite")}
+              onMouseOut={handleMouseOut}
+            >
             <NavLink
               to="https://jesseleach.github.io/newPictureSite"
               className="return"
             >
               Picture Portfolio
             </NavLink>
+            </div>
             <NavLink
               to="https://jesseleach.github.io/playground"
               className="return"
