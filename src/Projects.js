@@ -16,6 +16,10 @@ const ProjectsConfig = {
     src: "PictureSite.png",
     alt: "Picture Site",
   },
+  playground: {
+    src: "RedditProjectPic.png",
+    alt: "Reddit Project Site",
+  }
 };
 export function Projects() {
   const [activeProject, setActiveProject] = useState();
@@ -76,12 +80,17 @@ export function Projects() {
               Picture Portfolio
             </NavLink>
             </div>
+            <div
+              onMouseOver={handleMouseOver("playground")}
+              onMouseOut={handleMouseOut}
+            >
             <NavLink
               to="https://jesseleach.github.io/playground"
               className="return"
             >
               Reddit Project
             </NavLink>
+            </div>
           </div>
 
           {activeProject && (
