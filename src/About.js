@@ -13,6 +13,16 @@ export function About() {
           enjoy martial arts and cooking. I am always curious to learn more
           about new technologies and coding.
         </p>
+        <a href=" https://pdfhost.io/v/zX5qSF.MC_Microsoft_Word_Finance_Resumeodt">resume</a>
+        <div>
+        <a href="https://github.com/jesseleach">github</a>
+        </div>
+        <div>
+        <a href="https://www.linkedin.com/in/jesseleach/">linkedin</a>
+        </div>
+       
+
+       
         </div>
        
       </div>
