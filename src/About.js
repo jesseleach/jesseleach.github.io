@@ -13,7 +13,7 @@ export function About() {
           enjoy martial arts and cooking. I am always curious to learn more
           about new technologies and coding.
         </p>
-        <a href=" https://pdfhost.io/v/zX5qSF.MC_Microsoft_Word_Finance_Resumeodt">resume</a>
+        <a href="https://pdfhost.io/v/DXngYO2~r_JesseResumeSE2024">resume</a>
         <div>
         <a href="https://github.com/jesseleach">github</a>
         </div>
