@@ -9,9 +9,9 @@ export function About() {
         <div className="aboutText">
         <h1>About</h1>
         <p>
-          I am jesse I'm a front end developer living in Brooklyn Mars. I
+          I am jesse I'm a front end developer living in Brooklyn NY. I
           enjoy martial arts and cooking. I am always curious to learn more
-          about new technologies and coding.
+          about new technologies and coding and stuff.
         </p>
         <a href="https://pdfhost.io/v/DXngYO2~r_JesseResumeSE2024">resume</a>
         <div>
