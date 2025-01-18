@@ -9,7 +9,7 @@ export function About() {
         <div className="aboutText">
         <h1>About</h1>
         <p>
-          I am jesse I'm a front end developer living in Brooklyn New York. I
+          I am jesse I'm a front end developer living in Brooklyn Mars. I
           enjoy martial arts and cooking. I am always curious to learn more
           about new technologies and coding.
         </p>
